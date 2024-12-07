@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import day1 from "./days/day1";
+import day2 from "./days/day2";
 
 const args = process.argv.slice(2);
 const file = args[0];
@@ -12,6 +13,9 @@ switch (file) {
   // Add your cases here
   case "day1":
     result = day1(fileContent);
+    break;
+  case "day2":
+    result = day2(fileContent);
     break;
   default:
     console.log(`No file found for day: ${file}`);
